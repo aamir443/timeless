@@ -1,0 +1,12 @@
+{
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment.line.double-slash",
+        "settings": {
+          "foreground": "#008000"
+        }
+      }
+    ]
+  }
+}
