@@ -72,44 +72,57 @@ const Cart = () => {
           <div className="bg-white p-6 rounded-lg shadow-lg w-[90vw] max-w-md">
             <h3 className="text-xl font-semibold mb-4">Payment Details</h3>
             <p className="text-gray-600 mb-4">Total: ₹{getTotalPrice()}</p>
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                handleCompletePayment();
-              }}
-              className="flex flex-col gap-4"
-            >
-              <input
-                type="text"
-                placeholder="Card Number"
-                className="border p-2 rounded"
-                required
-              />
-              <input
-                type="text"
-                placeholder="Expiry Date (MM/YY)"
-                className="border p-2 rounded"
-                required
-              />
-              <input
-                type="text"
-                placeholder="CVV"
-                className="border p-2 rounded"
-                required
-              />
-              <button
-                type="submit"
-                className="bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition"
-              >
-                Complete Payment
-              </button>
-              <button
-                onClick={() => setIsModalOpen(false)}
-                className="text-gray-600 mt-2 hover:underline"
-              >
-                Cancel
-              </button>
-            </form>
+            {/* Payment Modal */}
+{isModalOpen && (
+  <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+    <div className="bg-white p-6 rounded-lg shadow-lg w-[90vw] max-w-md">
+      <h3 className="text-xl font-semibold mb-4 text-center">Make a Payment</h3>
+      
+      {/* QR Code Section */}
+      <div className="flex justify-center mb-4">
+        <img
+          src="/qrcode.jpg" // Replace with your QR code image path
+          alt="QR Code for Payment"
+          className="w-40 h-40"
+        />
+      </div>
+      
+      <p className="text-center text-gray-600 mb-4">
+        Scan the QR code with your Google Pay or compatible UPI app to make a payment.
+      </p>
+
+      {/* Confirm Payment Button */}
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleCompletePayment();
+        }}
+        className="flex flex-col items-center gap-4"
+      >
+        <button
+          type="submit"
+          className="bg-green-500 text-white w-full py-2 rounded hover:bg-green-600 transition"
+        >
+          Confirm Payment
+        </button>
+        
+        <p className="text-center text-gray-500 text-sm">
+          After completing the payment, please click "Confirm Payment" to proceed.
+        </p>
+        
+        {/* Cancel Button */}
+        <button
+          type="button"
+          onClick={() => setIsModalOpen(false)}
+          className="text-gray-600 mt-4 hover:underline"
+        >
+          Cancel
+        </button>
+      </form>
+    </div>
+  </div>
+)}
+
           </div>
         </div>
       )}

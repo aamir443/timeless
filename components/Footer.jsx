@@ -4,29 +4,29 @@ import { Facebook, Twitter, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
-    <div className="bg-black text-white py-6">
+    <div className="bg-gradient-to-br from-purple-700 to-cyan-400 text-white py-6">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="font-bold text-lg mb-4 md:mb-0">
           <Link href="/">
-            Timeless <span className="text-red-500 underline">Heaven</span>
+            Timeless <span className="text-red-500 underline">Haven</span>
           </Link>
         </div>
 
         <div className="flex flex-row gap-6 mb-4 md:mb-0">
-          <Link href="/about">About Us</Link>
-          <Link href="/contact">Contact</Link>
-          <Link href="/privacy">Privacy Policy</Link>
-          <Link href="/terms">Terms of Service</Link>
+          <Link href="/about" className="hover:text-red-500">About Us</Link>
+          <Link href="/contact" className="hover:text-red-500">Contact</Link>
+          <Link href="/privacy" className="hover:text-red-500">Privacy Policy</Link>
+          <Link href="/terms" className="hover:text-red-500">Terms of Service</Link>
         </div>
 
         <div className="flex gap-4">
-          <Link href="https://facebook.com">
+          <Link href="https://facebook.com" className="hover:text-red-500">
             <Facebook />
           </Link>
-          <Link href="https://twitter.com">
+          <Link href="https://twitter.com" className="hover:text-red-500">
             <Twitter />
           </Link>
-          <Link href="https://instagram.com">
+          <Link href="https://instagram.com" className="hover:text-red-500">
             <Instagram />
           </Link>
         </div>

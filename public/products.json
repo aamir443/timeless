@@ -40,19 +40,5 @@
     "description": "This is a description of Product 6.",
     "image": "/img27.jpg",
     "price": 799
-  },
-  {
-    "id": 7,
-    "title": "Product 7",
-    "description": "This is a description of Product 7.",
-    "image": "/img31.jpg",
-    "price": 899
-  },
-  {
-    "id": 8,
-    "title": "Product 8",
-    "description": "This is a description of Product 8.",
-    "image": "/img5.jpg",
-    "price": 999
   }
 ]
