@@ -16,13 +16,13 @@ const Header = () => {
         <ul className="flex flex-row gap-4">
           <li>
             <Link href="/bedsheets" className="hover:text-red-500">
-              Bedsheets
+              Bed Covers
             </Link>
           </li>
           <span>|</span>
           <li>
             <Link href="/pillow" className="hover:text-red-500">
-            Hand Print
+            Hand Made
             </Link>
           </li>
           <span>|</span>
