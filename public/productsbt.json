@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Blanket 1",
+    "description": "This is a description of Product 1.",
+    "image": "/bt1.jpg",
+    "price": 299
+  },
+  {
+    "id": 2,
+    "title": "Blanket 2",
+    "description": "This is a description of Product 2.",
+    "image": "/bt2.jpg",
+    "price": 399
+  },
+  {
+    "id": 3,
+    "title": "Product 3",
+    "description": "This is a description of Product 3.",
+    "image": "/bt3.jpg",
+    "price": 499
+  },
+  {
+    "id": 4,
+    "title": "Product 4",
+    "description": "This is a description of Product 4.",
+    "image": "/bt4.jpg",
+    "price": 599
+  },
+  {
+    "id": 5,
+    "title": "Product 5",
+    "description": "This is a description of Product 5.",
+    "image": "/bt5.jpg",
+    "price": 699
+  },
+  {
+    "id": 6,
+    "title": "Product 6",
+    "description": "This is a description of Product 6.",
+    "image": "/bt6.jpg",
+    "price": 799
+  }
+]

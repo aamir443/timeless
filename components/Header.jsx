@@ -21,13 +21,13 @@ const Header = () => {
           </li>
           <span>|</span>
           <li>
-            <Link href="/pillow" className="hover:text-red-500">
+            <Link href="/handPrint" className="hover:text-red-500">
             Hand Print
             </Link>
           </li>
           <span>|</span>
           <li>
-            <Link href="/mattress" className="hover:text-red-500">
+            <Link href="/pillow" className="hover:text-red-500">
               Pillow
             </Link>
           </li>

@@ -7,7 +7,7 @@ import React, { useState, useEffect } from "react";
 const Home = () => {
   const images = [
     "/img5.jpg",
-    "/blt4.jpeg",
+    "/bt1.jpeg",
     "/pillow.webp",
     "/mattress.jpeg",
     "/img23.jpg",

@@ -3,15 +3,15 @@ import { useCart } from "@/context/CartContext";
 import { useRouter } from "next/navigation";
 import React, { useState, useEffect } from "react";
 
-const Home = () => {
+const page = () => {
   const images = [
-    "/bt1.jpg",
-    "/bt2.jpg",
-    "/bt3.jpg",
-    "/bt4.jpg",
-    "/bt5.jpg",
-    "/bt6.jpg",
-    "/bt7.jpg",
+    "/p1.webp",
+    "/p2.webp",
+    "/p3.webp",
+    "/p4.webp",
+    "/p5.jpg",
+    "/p5.webp",
+    "/p7.webp",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,7 +32,7 @@ const Home = () => {
     }, 3000);
 
     const fetchProducts = async () => {
-      const res = await fetch("/productsbt.json");
+      const res = await fetch("/productshp.json");
       const data = await res.json();
       setProducts(data);
       setFilteredProducts(data);
@@ -140,7 +140,7 @@ const Home = () => {
       {/* Slogan Section */}
       <div className="mt-8 text-center">
         <h2 className="text-4xl font-extrabold text-red-600">
-        "Stay Warm, Stay Cozy, Stay Home."
+          Feel the Luxury, Love the Comfort.
         </h2>
         <p className="text-xl text-gray-700 mt-2 font-medium">
           Discover the perfect blend of comfort and elegance with our premium
@@ -256,4 +256,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default page;
