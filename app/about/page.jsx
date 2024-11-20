@@ -54,7 +54,7 @@ const AboutUs = () => {
               {/* Team Member 2 */}
               <div className="bg-white p-6 rounded-lg shadow-lg text-center hover:bg-red-600 transition">
                 <img
-                  src="/team2.jpg"
+                  src="/lakshay.png"
                   alt="Team Member 2"
                   className="w-32 h-32 rounded-full mx-auto mb-4"
                 />
@@ -65,7 +65,7 @@ const AboutUs = () => {
               {/* Team Member 3 */}
               <div className="bg-white p-6 rounded-lg shadow-lg text-center hover:bg-red-600 transition">
                 <img
-                  src="/rajat.jpg"
+                  src="/rajat1.jpg"
                   alt="Team Member 3"
                   className="w-32 h-32 rounded-full mx-auto mb-4"
                 />

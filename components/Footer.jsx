@@ -4,7 +4,7 @@ import { Facebook, Twitter, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-br from-purple-700 to-cyan-400 text-white py-6">
+    <div className="bg-black text-white py-6">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="font-bold text-lg mb-4 md:mb-0">
           <Link href="/">

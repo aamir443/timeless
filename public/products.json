@@ -1,44 +1,74 @@
 [
   {
     "id": 1,
-    "title": "Product 1",
-    "description": "This is a description of Product 1.",
+    "title": "Cotton Bedsheet",
     "image": "/img5.jpg",
-    "price": 299
+    "price": 599
   },
   {
     "id": 2,
-    "title": "Product 2",
-    "description": "This is a description of Product 2.",
-    "image": "/img11.jpg",
-    "price": 399
+    "title": "Velvet Bedsheet",
+    "image": "/Velvet new _page-0003.jpg",
+    "price": 599
   },
   {
     "id": 3,
-    "title": "Product 3",
-    "description": "This is a description of Product 3.",
-    "image": "/img15.jpg",
-    "price": 499
+    "title": "Printed Bedsheet",
+    "image": "/hp1.jpg",
+    "price": 399
   },
   {
     "id": 4,
-    "title": "Product 4",
-    "description": "This is a description of Product 4.",
+    "title": "Cotton Mix",
     "image": "/img19.jpg",
     "price": 599
   },
   {
     "id": 5,
-    "title": "Product 5",
-    "description": "This is a description of Product 5.",
-    "image": "/img23.jpg",
-    "price": 699
+    "title": "Pillow",
+    "image": "/p1.webp",
+    "price": 399
   },
   {
     "id": 6,
-    "title": "Product 6",
-    "description": "This is a description of Product 6.",
-    "image": "/img27.jpg",
-    "price": 799
+    "title": "Pillow",
+    "image": "/p5.jpg",
+    "price": 199
+  },
+  {
+    "id": 7,
+    "title": "Pillow",
+    "image": "/p5.webp",
+    "price": 399
+  },
+  {
+    "id": 8,
+    "title": "Pillow",
+    "image": "/p4.webp",
+    "price": 299
+  },
+  {
+    "id": 9,
+    "title": "Blanket",
+    "image": "/bt4.jpg",
+    "price": 1200
+  },
+  {
+    "id": 10,
+    "title": "Blanket",
+    "image": "/bt3.jpg",
+    "price": 1600
+  },
+  {
+    "id": 11,
+    "title": "Blanket",
+    "image": "/bt2.jpg",
+    "price": 1400
+  },
+  {
+    "id": 12,
+    "title": "Blanket",
+    "image": "/bt1.jpg",
+    "price": 1500
   }
 ]

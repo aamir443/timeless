@@ -4,7 +4,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="flex w-full bg-gradient-to-br from-purple-700 to-cyan-400 h-20 items-center text-white justify-between mx-auto">
+    <div className="flex w-full bg-black h-20 items-center text-white justify-between mx-auto">
       <div className="font-bold mx-10 uppercase">
         <Link href="/">
           <div>

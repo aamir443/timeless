@@ -32,7 +32,7 @@ const Home = () => {
     }, 3000);
 
     const fetchProducts = async () => {
-      const res = await fetch("/products.json");
+      const res = await fetch("/productbed.json");
       const data = await res.json();
       setProducts(data);
       setFilteredProducts(data);
@@ -224,7 +224,7 @@ const Home = () => {
           {filteredProducts.map((product) => (
             <div
               key={product.id}
-              className="bg-white p-5 rounded-lg shadow-lg flex flex-col items-center"
+              className="bg-white p-5 rounded-lg shadow-lg flex flex-col items-center hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
             >
               <img
                 src={product.image}

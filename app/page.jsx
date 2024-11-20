@@ -6,13 +6,13 @@ import React, { useState, useEffect } from "react";
 
 const Home = () => {
   const images = [
-    "/img5.jpg",
-    "/bt1.jpeg",
-    "/pillow.webp",
-    "/mattress.jpeg",
+    "/hp1.jpg",
+    "/p1.webp",
+    "/bt1.jpg",
+    "/Velvet new _page-0001.jpg",
     "/img23.jpg",
-    "/blt2.jpg",
-    "/img31.jpg",
+    "/p5.jpg",
+    "/bt4.jpg",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -185,7 +185,7 @@ const Home = () => {
         {filteredProducts.map((product) => (
           <div
             key={product.id}
-            className="bg-white w-full sm:w-[45%] md:w-[30%] lg:w-[22%] p-5 rounded-lg shadow-lg flex flex-col items-center"
+            className="bg-white w-full sm:w-[45%] md:w-[30%] lg:w-[22%] p-5 rounded-lg shadow-lg flex flex-col items-center hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
           >
             <img
               src={product.image}
