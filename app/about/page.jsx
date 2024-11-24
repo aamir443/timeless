@@ -80,7 +80,7 @@ const AboutUs = () => {
                   className="w-32 h-32 rounded-full mx-auto mb-4"
                 />
                 <h3 className="text-xl font-semibold text-gray-800">Preet Gupta</h3>
-                <p className="text-gray-600">Backend Developer</p>
+                <p className="text-gray-600">Database Administrator</p>
               </div>
             </div>
           </section>
