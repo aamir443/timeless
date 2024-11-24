@@ -1,10 +1,13 @@
 "use client";
 import { signIn } from "next-auth/react";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const page = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -14,13 +17,15 @@ const page = () => {
 
   const handleGoogleSignIn = async () => {
     // Sign in using Google
-    await signIn("google");
+    await signIn("google", { callbackUrl: "/" });
   };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-lg w-[90%] max-w-md">
-        <h1 className="text-2xl font-bold mb-6 text-center text-gray-800">Login</h1>
+        <h1 className="text-2xl font-bold mb-6 text-center text-gray-800">
+          Login
+        </h1>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           {/* Email Input */}
           <input

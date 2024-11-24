@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import styles from "./authLinks.module.css";
+// import styles from "./authLinks.module.css";
 import { useState } from "react";
 import { signOut, useSession } from "next-auth/react";
 
@@ -12,26 +12,26 @@ const AuthLinks = () => {
   return (
     <>
       {status === "unauthenticated" ? (
-        <Link href="/login" className={styles.link}>
+        <Link href="/login" className={"styles.link"}>
           Login
         </Link>
       ) : (
         <>
-          <Link href="/logout" className={styles.link}>
+          <Link href="/logout" className={"styles.link"}>
             Write
           </Link>
-          <span className={styles.link} onClick={signOut}>
+          <span className={"styles.link"} onClick={signOut}>
             Logout
           </span>
         </>
       )}
-      <div className={styles.burger} onClick={() => setOpen(!open)}>
-        <div className={styles.line}></div>
-        <div className={styles.line}></div>
-        <div className={styles.line}></div>
+      <div className={"styles.burger"} onClick={() => setOpen(!open)}>
+        <div className={"styles.line"}></div>
+        <div className={"styles.line"}></div>
+        <div className={"styles.line"}></div>
       </div>
       {open && (
-        <div className={styles.responsiveMenu}>
+        <div className={"styles.responsiveMenu"}>
           <Link href="/">Homepage</Link>
           <Link href="/">About</Link>
           <Link href="/">Contact</Link>
@@ -40,7 +40,7 @@ const AuthLinks = () => {
           ) : (
             <>
               <Link href="/write">Write</Link>
-              <span className={styles.link}>Logout</span>
+              <span className={"styles.link"}>Logout</span>
             </>
           )}
         </div>
